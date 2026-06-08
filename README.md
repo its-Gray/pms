@@ -268,39 +268,40 @@ The dashboard is your control center showing:
 #### **Installation Steps**
 
 1. **Download the System**
-   \`\`\`bash
+2. 
+   ```bash
    git clone https://github.com/your-repo/property-management-system.git
    cd property-management-system
-   \`\`\`
+   ```
 
-2. **Setup Backend**
-   \`\`\`bash
+3. **Setup Backend**
+   ```bash
    cd server
    npm install
    cp .env.example .env
    # Edit .env with your database credentials
    npm run init-db
    npm run dev
-   \`\`\`
+   ```
 
-3. **Setup Frontend**
-   \`\`\`bash
+4. **Setup Frontend**
+   ```bash
    cd client
    npm install
    cp .env.example .env
    # Edit .env with your API URL
    npm run dev
-   \`\`\`
+   ```
 
 #### **Database Configuration**
 Create a MySQL database and update the `.env` file:
-\`\`\`env
+```env
 DB_HOST=localhost
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_NAME=property_management
 PORT=5000
-\`\`\`
+```
 
 #### **Environment Variables**
 - `DB_HOST`: Database server address

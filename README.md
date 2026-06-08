@@ -287,7 +287,7 @@ The dashboard is your control center showing:
 4. **Setup Frontend**
    ```bash
    cd client
-   npm install
+   yarn
    cp .env.example .env
    # Edit .env with your API URL
    npm run dev
